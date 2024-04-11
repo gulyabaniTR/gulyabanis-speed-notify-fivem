@@ -4,7 +4,7 @@
 
 ### [TR]
 Fivem için hız uyarı scripti.
-Test amaçlı Salton City tarafındaki Havalimanına test amançlı bir tane blip ekledim, config.lua üzerinden daha fazla lokasyon ekleyip ayarlamaları yapabilirsiniz.
+Test amaçlı Salton City tarafındaki Havalimanına test amaçlı bir tane blip ekledim, config.lua üzerinden daha fazla lokasyon ekleyip ayarlamaları yapabilirsiniz.
 
 Ek Bilgiler:
 - Car, Bike, Quadbike ve Amfibi versiyonlarının kontrolleri yapılmaktadır. Uçaklar, helikopterler vb. dahil değildir.
