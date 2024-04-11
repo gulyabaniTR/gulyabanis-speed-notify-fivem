@@ -4,7 +4,7 @@ games {'gta5'}
 
 author 'Gulyabani'
 description 'Speed Notify'
-version '0.1a'
+version '0.2a'
 
 -- What to run
 client_scripts {

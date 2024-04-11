@@ -25,13 +25,14 @@ Citizen.CreateThread(
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(10)
+        Citizen.Wait(100)
         local playerCoords = GetEntityCoords(playerPed)
         for i in pairs(Config.Locations) do
 
+            -- Use Vdist2 for performance
            local distance = Vdist2(playerCoords.x, playerCoords.y, playerCoords.z, Config.Locations[i].x, Config.Locations[i].y, Config.Locations[i].z)
 
-           if distance <= 150.0 then
+           if distance <= 170.0 then
                 local playerCar = GetVehiclePedIsIn(playerPed, false)
                 local vehicleEntity = GetEntityModel(playerCar)
                 local speed = GetEntitySpeed(playerCar) * 3.6 -- m/s to km/h
@@ -46,7 +47,7 @@ Citizen.CreateThread(function()
                 or IsThisModelAnAmphibiousCar(vehicleEntity) 
                 or IsThisModelAnAmphibiousQuadbike(vehicleEntity) )
                     then
-                        displayHint("You are speeding! Slow down!")         
+                        displayHint(Config.WarningMessage)         
                         Citizen.Wait(2000)         
                 end
             end

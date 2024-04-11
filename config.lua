@@ -2,7 +2,7 @@ Config = {}
 
 Config.Locations = {
     {
-        title = "Speed Cam",
+        title = "Speed Cam Limit 40 km/h",
         colour = 1,
         id = 1,
         x = 1190.86,
@@ -11,3 +11,5 @@ Config.Locations = {
         maxKmh = 40,
     }
 }
+
+Config.WarningMessage = "You are speeding! Slow down!"
